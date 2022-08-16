@@ -2,3 +2,4 @@
 2. [资源库](https://msdn.itellyou.cn/)
 3. [Microsoft®Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx)
 4. [各种教程](https://www.runoob.com/)
+5. [Clash订阅转换](https://now-subconverter-lovat-tau.vercel.app/)
