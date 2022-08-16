@@ -1,2 +1,2 @@
 # KOBAYASHI
-A repository of kobayashi
+just a repository of kobayashi
