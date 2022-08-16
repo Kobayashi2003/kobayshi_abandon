@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerPath": "C:/TDM-GCC-64/bin/g++.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++20",
+      "intelliSenseMode": "gcc-x64",
+      "macFrameworkPath": [],
+      "browse": {
+        "path": [
+          "C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/*",
+          "C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/*"
+        ]
+      }
+    }
+  ],
+  "version": 4
+}
