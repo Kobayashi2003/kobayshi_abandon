@@ -15,7 +15,7 @@ https://www.somode.com/course/10412.html
 # vscode远程连接到远程服务器后，无修改文件权限
 
 错误信息：
->Failed to save “test’’: Unable to write file (NoPermissions (FileSystemError): Error: EACCES: permission denied, open…
+> Failed to save “test’’: Unable to write file (NoPermissions (FileSystemError): Error: EACCES: permission denied, open…
 
 修改权限：
 > sudo chown -R myuser /path/to/folder
