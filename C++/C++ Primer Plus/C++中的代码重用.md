@@ -25,7 +25,7 @@
 
 使用公有继承时，类可以是继承接口，可能还有实现（基类的纯虚函数提供接口，但不提供实现）。获得接口是 is-a 关系的组成部分。而使用组合，类可以获得实现，但不能获得接口。不继承接口是 has-a 关系的组成部分。
 
-[Practice_46](../Practice_46.cpp)
+[Practice_46](../Practice/Practice_46.cpp)
 
 ### C++和约束
 
@@ -177,7 +177,7 @@ funType className<T>::function(T value1, T value2) {}
 className<int> A;
 ```
 
-[Stack](../Practice_49_Stack.cpp)
+[Stack](../Practice/Practice_49_Stack.cpp)
 
 ### 模板多功能性
 
@@ -217,4 +217,3 @@ class className {
 类模板与函数模板很相似，因为可以有隐式实例化、显式实例化和显式具体化，它们统称为具体化（specialization）。模板以泛型的方式描述类，而具体化是使用具体的类型生成类声明。
 
 #### 隐式实例化
-

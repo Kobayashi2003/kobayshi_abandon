@@ -3,17 +3,16 @@
 export default {
   data() {
     return {
-      number : 0,
-      name : "xaiowang"
+      counter:0,
     }
-  }
+  },
+  methode
 }
 </script>
 
 <template>
   <div>
-    {{number}}
-    {{name}}
+    {{ counter }}
   </div>
 </template>
 

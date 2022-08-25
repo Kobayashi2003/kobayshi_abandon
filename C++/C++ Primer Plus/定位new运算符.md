@@ -3,7 +3,7 @@
 new 运算符的一种变体，被称为定位（placement）new 运算符，它让我们能够指定到要使用的位置。
 <!-- 程序员可能使用这种特性来设置其内存管理规程、处理需要通过特定地址进行访问的硬件或在特定位置创建对象 -->
 
-[Practice_41.cpp](../Practice_41.cpp)
+[Practice_41.cpp](../Practice/Practice_41.cpp)
 
 ## 防止重叠
 

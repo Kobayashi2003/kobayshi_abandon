@@ -9,4 +9,4 @@ struct data {
 };
 ```
 
-[Pracitce_23](../Practice_23.cpp)
+[Pracitce_23](../Practice/Practice_23.cpp)

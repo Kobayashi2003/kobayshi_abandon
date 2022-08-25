@@ -10,3 +10,5 @@ for /f "delims=" %%i in ('dir /b/od *.*') do (
 	)
 )
 pause > nul
+
+

@@ -8,6 +8,6 @@ const成员函数将会保证该函数的不会修改调用对象
 funType function() const {}
 ```
 
-[Practice_30](../Practice_30.cpp)
+[Practice_30](../Practice/Practice_30.cpp)
 
 其原理见[this指针](./this%E6%8C%87%E9%92%88.md)

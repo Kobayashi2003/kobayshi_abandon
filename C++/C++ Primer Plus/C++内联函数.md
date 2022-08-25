@@ -13,7 +13,7 @@
 
 · 在函数定义前加上关键字 inline
 
-[Pracitce_18](../Practice_18.cpp)
+[Pracitce_18](../Practice/Practice_18.cpp)
 
 ## 内联与宏
 
