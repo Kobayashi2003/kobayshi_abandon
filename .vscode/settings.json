@@ -114,7 +114,8 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "Practice_34_ASE_enCode_and_deCode_EXM.C": "cpp"
     },
     "git.ignoreLimitWarning": true,
 }

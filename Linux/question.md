@@ -28,3 +28,4 @@ https://blog.csdn.net/weixin_51178129/article/details/126037386?spm=1001.2101.30
 
 然后更新源
 > sudo apt-get update
+
