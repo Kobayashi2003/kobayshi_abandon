@@ -4,7 +4,7 @@
     "editor.minimap.scale": 2,
     "editor.cursorSmoothCaretAnimation": true,
     "bracket-pair-colorizer-2.depreciation-notice": false,
-    "workbench.colorTheme": "Noctis Obscuro",
+    "workbench.colorTheme": "Noctis",
     "files.autoSave": "afterDelay",
 
     "files.trimFinalNewlines": true,
