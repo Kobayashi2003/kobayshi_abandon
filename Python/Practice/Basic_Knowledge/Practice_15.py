@@ -1,4 +1,4 @@
-class coffeeCup:
+class CoffeeCup:
     coffee = 'empty half full'.split()
 
     def __init__(self):
@@ -6,7 +6,7 @@ class coffeeCup:
         self.cont = 0
         print("You picked up a cup of coffee")
 
-    def mentalStruggle(self):
+    def mental_struggle(self):
         if self.cont == 3:
             print("I have drunk three cups of coffee, do I really want to drink another cup?")
             return self.choose()
@@ -18,13 +18,13 @@ class coffeeCup:
             return False
 
     def choose(self):
-        return (input("My choice is [Y/N]:") == 'Y')
+        return input("My choice is [Y/N]:") == 'Y'
 
     def drink(self):
         if self.cont >= 3:
             if self.mentalStruggle():
                 pass
-            else :
+            else:
                 print("I don't want more")
                 return 
 
@@ -42,4 +42,5 @@ class coffeeCup:
     def refill(self):
         self.coffeeLeft = self.coffee.index('full')
 
-a_cup_of_coffee = coffeeCup()
+
+a_cup_of_coffee = CoffeeCup()
