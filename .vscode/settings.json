@@ -115,7 +115,11 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "Practice_34_ASE_enCode_and_deCode_EXM.C": "cpp"
+        "Practice_34_ASE_enCode_and_deCode_EXM.C": "cpp",
+        "tmux.h": "c",
+        "time.h": "c",
+        "compat.h": "c",
+        "limits.h": "c"
     },
     "git.ignoreLimitWarning": true,
 }
