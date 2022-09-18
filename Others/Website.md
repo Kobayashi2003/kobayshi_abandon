@@ -4,3 +4,4 @@
 4. [各种教程](https://www.runoob.com/)
 5. [Clash订阅转换](https://now-subconverter-lovat-tau.vercel.app/)
 6. [C/C++参考](https://en.cppreference.com/)
+7. [C语言技术网](http://www.freecplus.net/)
