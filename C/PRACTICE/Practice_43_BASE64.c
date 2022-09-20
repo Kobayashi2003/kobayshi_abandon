@@ -12,7 +12,9 @@
 char TABLE[64]={'\0'};
 
 char data[] = "I love Garw Gura!";
-char CODE[] = "SSBsb3ZlIEdhcncgR3VyYSE==";
+// char CODE[] = "SSBsb3ZlIEdhcncgR3VyYSE==";
+
+char CODE[] = "NzI2OTEwOTkz";
 //base64编码：1、将data转换为二进制进行表示 2、将转换后的二进制代码以每6bit为一份的形式进行分割，若最后一组不足6bit，则将其用0补齐 3、把每一组的二进制码转换为十进制，并通过查表找到该数所对应的base64字符 4、最后在得到的base64编码的末尾加上"==""
 
 void makeTable(void)
