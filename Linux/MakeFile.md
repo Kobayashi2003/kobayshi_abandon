@@ -4,6 +4,8 @@
 
 [官网](https://www.gnu.org/software/make/manual/make.html#Makefile-Contents)
 
+[CC与GCC之间的区别](https://blog.csdn.net/guoqx/article/details/121093157)
+
 ## MakeFile 的规则
 
 ```makefile

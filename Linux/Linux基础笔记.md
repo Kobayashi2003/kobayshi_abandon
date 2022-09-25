@@ -1,5 +1,13 @@
 [参考](http://www.freecplus.net/94103ae45b9048a7a60b6aca31f57a41.html)
 
+[什么是包管理器](https://gwj1314.blog.csdn.net/article/details/122791478?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-122791478-blog-125702920.pc_relevant_multi_platform_featuressortv2dupreplace&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-122791478-blog-125702920.pc_relevant_multi_platform_featuressortv2dupreplace&utm_relevant_index=1)
+
+[kali官网](https://www.kali.org/)
+
+[GNU官网](https://gnu.io/)
+
+> WSL: Windows Subsystem for Linux
+
 # Linux 命令格式
 
 `命令 [-选项] [参数]`
@@ -657,4 +665,3 @@ ZZ|快捷键，保存修改并退出
 
 
 ## RPM包管理
-
