@@ -2,6 +2,8 @@
 
 [参考](https://blog.csdn.net/weixin_38391755/article/details/80380786/)
 
+[官网](https://www.gnu.org/software/make/manual/make.html#Makefile-Contents)
+
 ## MakeFile 的规则
 
 ```makefile
@@ -662,4 +664,3 @@ foo.c : foo.y
 ————
 
 在 Makefile中的定义的变量，就像是C/C++语言中的宏一样，他代表了一个文本字串，在Makefile中执行的时候其会自动原模原样地展开在所使用的地方。其与C/C++所不同的是，你可以在Makefile中改变其值。在Makefile中，变量可以使用在“目标”，“依赖目标”，“命令”或是 Makefile的其它部分中。变量的命名字可以包含字符、数字，下划线（可以是数字开头），但不应该含有“:”、“#”、“=”或是空字符（空格、回车等）。变量是大小写敏感的，“foo”、“Foo”和“FOO”是三个不同的变量名。传统的Makefile的变量名是全大写的命名方式，但我推荐使用大小写搭配的变量名，如：MakeFlags。这样可以避免和系统的变量冲突，而发生意外的事情。有一些变量是很奇怪字串，如“$<”、“$@”等，这些是自动化变量，我会在后面介绍。
-

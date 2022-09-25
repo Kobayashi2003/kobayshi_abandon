@@ -2,6 +2,10 @@
 
 [PowerShell常用命令及使用方法](https://blog.csdn.net/Captain_RB/article/details/111604033)
 
+[官网](https://learn.microsoft.com/zh-cn/powershell/scripting/learn/shell/using-aliases?view=powershell-7.2)
+
 提升管理员权限
 
 > Start-Process powershell -Verb runAs
+
+[美化终端](https://ohmyposh.dev/docs/migrating)
