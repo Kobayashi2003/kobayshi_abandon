@@ -1536,3 +1536,78 @@ print(myAnotherFunc())
 [将StopIteraion用来作为迭代器的输出挺迟/next()](https://blog.csdn.net/csdnhuizhu/article/details/107268520)
 
 生成器类似于返回值为数组的一个函数，这个函数可以接收参数，可以被调用，但不同于一般的函数只会调用一次性返回包括了所有数值的数组，生成器一次只能产生一个值，这样消耗的内存数量将大大减小。而且允许调用函数可以很快地处理前几个返回值。因此生成器看起来是一个函数器，但是表现得却像是一个迭代器
+
+**生成器的创建**
+
+要创建一个 generator 主要有两种方法
+
+1. 把一个列表生成器的 `[]` 改为 `()`
+
+`generator_list = (x*x for i in range(0, 10))`
+
+生成器保存的是算法，每次调用 `next(generator_list)` 时计算出下一个元素的值，一直计算出最后一个元素的值，当生成器已没有元素能生成时，就会抛出 StopInteration 的错误
+
+为防止报错，比较稳妥的方法是使用 for 循环进行迭代
+
+```python
+generator_ex = (x*x for x in range(10))
+for i in generator_ex:
+   print(i)
+```
+
+2. 使用 yield 方法生成
+
+生成器跟普通函数不同的是，当一个生成器函数被调用时，它返回一个生成器对象，而不用执行该函数。在调用生成器的过程中，每次遇到 yield 时函数会暂停并保存当前所有的运行信息，返回 yield 的值，并在下一次执行 next() 时从当前位置继续执行
+
+使用 for 循环调用生成器时取不到生成器的返回值，此时可以通过捕获 StopInteration 的错误，并在 StopInteration 的 value 中取得返回值
+
+```python
+def fib(max):
+    n, before, after = 0, 0, 1
+    while n < max:
+        yield after
+        before, after = after, before + after
+        n += 1
+    return 'done'
+
+
+g = fib(10)
+while True:
+    try:
+        x = next(g)
+        print('g:', x)
+    except StopIteration as e:
+        print('Generator return value:', e.value)
+        break
+```
+
+**生成器的send函数**
+
+`send()`函数与`next()`类似，不同的是 send 函数可以向生成器传递参数
+
+在使用 send 函数时，不能将一个非 None 的值传给初始的生成器，即在调用 send 前，生成器内部应该执行道 yield 所在的语句并暂停。在调用带非空参数的 send 函数之前，应该使用 next(generator) 或者 send(None), 使得生成器执行到 yield 语句并暂停。
+
+
+**总结**
+
+生成器随着时间的推移生成了一个数值队列。一般的函数在执行完毕之后会返回一个值然后退出，但是生成器会自动挂起，然后重新继续执行，它会利用 yield 关键字挂起函数，给调用者返回一个值，同时保留了当前的状态，可以使函数继续执行，生成器和迭代协议是密切相关的，可迭代的对象都有一个 next 方法，这个方法要么返回迭代的下一项，要么引起异常结束迭代。具有 yield 关键字的函数都是生成器，yield 可以理解为 return 不同的是 return 返回后，函数会释放，而生成器则不会。在直接调用 next 方法或用 for 语句进行下一次迭代时，生成器会从 yield 下一句开始执行，直至遇到下一个 yield
+
+
+### 迭代器
+
+迭代是访问集合元素的一种方式。迭代器（iterator）是一个可以记住遍历位置的对象。迭代器对象是实现了 iter 和 next 两个方法的对象：iter 用于创建迭代对象，next 用于获得下一个迭代元素。在 Python 中，访问迭代器对象时只能从第一个元素开始访问，直到所有元素被访问完结束。string、list 和 tuple 对象可用于创建迭代器。
+
+迭代器的特征是从集合的第一个元素开始访问对象，直到所有元素被访问完结束，访问对象元素时只能从前往后访问。使用迭代器的优点是不要求事先准备好整个迭代过程中的所有元素。迭代器仅在迭代到某个元素时才计算该元素，而在这之前或之后元素可以不存在或者被摧毁。因此迭代器适合遍历一些数量巨大甚至无限的序列
+
+
+### 可迭代对象与迭代器判断
+
+可直接作用于 for 循环的数据类型有两类：一类是数据类型，另一类是生成器。在 Python 中，可以直接作用于 for 循环的对象统称为可迭代对象（Iterable）。判断一个对象是否为可迭代对象可以使用 `isinstance()` 函数
+
+```python
+from collections.abc import Iterable
+isinstance([], Iterable)
+```
+
+生成器都是迭代器对象，但 list、dict、str 虽然是可迭代对象，却不是迭代器对象。把 list、dict、str 等可迭代对象迭代器对象可以使用 iter() 函数
+
