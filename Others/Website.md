@@ -5,3 +5,5 @@
 5. [Clash订阅转换](https://now-subconverter-lovat-tau.vercel.app/)
 6. [C/C++参考](https://en.cppreference.com/)
 7. [C语言技术网](http://www.freecplus.net/)
+8. [minGV下载链接](https://sourceforge.net/projects/mingw-w64/files/)
+9. [开源协议](https://zhuanlan.zhihu.com/p/350966700?utm_id=0)

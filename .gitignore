@@ -5,3 +5,5 @@ Python/.idea/
 *test*.*
 From_Github/
 MISC/
+CodeServer/
+*.ipynb
