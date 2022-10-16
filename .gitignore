@@ -6,4 +6,4 @@ Python/.idea/
 From_Github/
 MISC/
 CodeServer/
-*.ipynb
+# *.ipynb
