@@ -150,6 +150,11 @@
     "**/.vscode",
     "**/.vscode/**"
   ],
+  "C_Cpp.intelliSenseEngine": "default",
+
+  "clangd.intelliSenseEngine": "disabled",
+  "clangd.serverCompletionRanking": true,
+
   "python.testing.pytestArgs": [
     "Python"
   ],

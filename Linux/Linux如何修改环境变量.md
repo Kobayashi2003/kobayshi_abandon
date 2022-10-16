@@ -32,3 +32,4 @@ export PATH=$PAHT:/home/路径
 
 
 [参考](https://blog.csdn.net/qq_43684791/article/details/120166855)
+[配置环境变量](https://blog.csdn.net/shaoming314/article/details/123973828)
